@@ -60,6 +60,7 @@
 		E6E8B9612680FA2D00E34EAF /* ChiefBook */ = {
 			isa = PBXGroup;
 			children = (
+				E6E8B9782680FAC000E34EAF /* ViewControllers */,
 				E6E8B9772680FAAE00E34EAF /* StoryBoards */,
 				E6E8B9762680FAA300E34EAF /* Model */,
 				E6E8B9622680FA2D00E34EAF /* AppDelegate.swift */,
@@ -83,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				E6E8B9682680FA2D00E34EAF /* Main.storyboard */,
-				E6E8B9782680FAC000E34EAF /* ViewControllers */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";

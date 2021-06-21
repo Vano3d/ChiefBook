@@ -14,6 +14,7 @@ class RecipeDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         // First comment in RecipeDetailsVC from Max
+        // First comment in RecipeDetailsVC from Ivan
     }
     
 

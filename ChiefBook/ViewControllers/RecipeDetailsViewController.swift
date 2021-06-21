@@ -13,8 +13,8 @@ class RecipeDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        // First comment in RecipeDetailsVC from Max
-        // First comment in RecipeDetailsVC from Ivan
+        // First_ttt comment in RecipeDetailsVC from Max
+        // First comment in RecipeDetailsVC from Ivan. And Max's comment modified
     }
     
 

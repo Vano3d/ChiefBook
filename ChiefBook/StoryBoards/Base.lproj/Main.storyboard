@@ -2,14 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QjV-6S-hde">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main List View Controller-->
+        <!--Chief Book-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainListViewController" customModule="ChiefBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +59,10 @@
                             <constraint firstItem="30g-HO-oD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mXs-Pe-A6C"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zMG-ig-xPM"/>
+                    <navigationItem key="navigationItem" title="Chief Book" id="zMG-ig-xPM"/>
+                    <connections>
+                        <outlet property="tableView" destination="30g-HO-oD9" id="LC3-lb-woh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

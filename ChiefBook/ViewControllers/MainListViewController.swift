@@ -9,14 +9,43 @@ import UIKit
 
 class MainListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
+   private var recipeList = Recipe.getRecipeList()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // minorComment from Max
-        // minorComment from Ivan
-        // secondMinorComment from Max
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
 
 }
 
+
+extension MainListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "recipeCell",
+            for: indexPath
+        )
+        let recipe = recipeList[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = recipe.title
+        content.secondaryText = recipe.difficulty
+        
+        cell.contentConfiguration = content
+        
+        return cell
+    }
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        recipeList.count
+    }
+}

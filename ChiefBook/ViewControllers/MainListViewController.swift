@@ -8,16 +8,52 @@
 import UIKit
 
 class MainListViewController: UIViewController {
+
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var recipeList = Recipe.getRecipeList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-            // Ivan comment 1
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
 
 }
 
+extension MainListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Ты тапнул на меня!")
+    }
+}
 
+extension MainListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        recipeList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt
+                indexPath: IndexPath) -> UITableViewCell {
+                let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "cell",
+                    for: indexPath
+                )
+        let recipe = recipeList[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = recipe.title
+        content.secondaryText = recipe.difficulty
+        
+        
+        cell.contentConfiguration = content
+        
+        return cell
+    }
+    
+    
+}
 
 

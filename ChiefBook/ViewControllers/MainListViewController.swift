@@ -56,7 +56,7 @@ extension MainListViewController: UITableViewDataSource {
     }
     
 }
-
+// Передаём данные на экран с подробным опианием рецепта
 extension MainListViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let vc = segue.destination as? RecipeDetailsViewController,
@@ -71,7 +71,7 @@ extension MainListViewController {
 extension MainListViewController {
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        .none
+        return .delete
     }
     
     func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {

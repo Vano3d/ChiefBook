@@ -75,7 +75,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <mutableString key="text">- Подготовьте продукты для приготовления салата: Салат Айсберг - 400 гр, Куриное филе 280 гр, Помидоры Черри - 10 шт, Батон 220 гр, Пармезан 80 гр, Чеснок 1 зубч., Растительное масло 1 ст.л., Соль и перец черныый молотый по вкусу 
 - Батон нарежьте на небольшие кубики
-- На сковороду налейте немного растительного масла, выключите плиту и закажите пиццу</mutableString>
+- На сковороду налейте немного растительного масла, выключите плиту и закажите пиццу.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -9,15 +9,22 @@ import UIKit
 
 class RecipeDetailsViewController: UIViewController {
 
+    @IBOutlet weak var recipeTitle: UILabel!
+    @IBOutlet weak var recipeDifficulty: UILabel!
+    @IBOutlet weak var recipeDescription: UITextView!
+    
+    var recipe: Recipe?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        // First_ttt comment in RecipeDetailsVC from Max
-        // First comment in RecipeDetailsVC from Ivan. And Max's comment modified
     }
     
-
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        recipeTitle.text = recipe?.title
+        recipeDifficulty.text = recipe?.difficulty
+        recipeDescription.text = recipe?.description
+    }
 
 }

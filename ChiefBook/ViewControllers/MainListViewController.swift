@@ -19,13 +19,15 @@ class MainListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        navigationItem.leftBarButtonItem = editButtonItem
+        
     }
 
 }
 
 extension MainListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Ты тапнул на меня!")
+//        print("Ты тапнул на меня!")
     }
 }
 
@@ -53,7 +55,31 @@ extension MainListViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
+extension MainListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? RecipeDetailsViewController,
+              let indexPath = tableView.indexPathForSelectedRow
+        else { return }
+        
+        let recipe = recipeList[indexPath.row]
+        vc.recipe = recipe
+    }
+}
 
+extension MainListViewController {
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentRecipe = recipeList.remove(at: sourceIndexPath.row)
+        recipeList.insert(currentRecipe, at: destinationIndexPath.row)
+    }
+}

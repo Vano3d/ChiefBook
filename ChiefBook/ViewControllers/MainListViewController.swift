@@ -11,7 +11,7 @@ class MainListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-   private var recipeList = Recipe.getRecipeList()
+    private var recipeList = Recipe.getRecipeList()
 
     
     override func viewDidLoad() {

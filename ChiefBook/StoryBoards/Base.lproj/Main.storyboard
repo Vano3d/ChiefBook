@@ -57,50 +57,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-Wo-A2b">
-                                <rect key="frame" x="19" y="128.5" width="376" height="733.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">- Подготовьте продукты для приготовления салата: Салат Айсберг - 400 гр, Куриное филе 280 гр, Помидоры Черри - 10 шт, Батон 220 гр, Пармезан 80 гр, Чеснок 1 зубч., Растительное масло 1 ст.л., Соль и перец черныый молотый по вкусу 
-- Батон нарежьте на небольшие кубики
-- На сковороду налейте немного растительного масла, положите очищенный и раздавленный зубчик чеснока. Выложите нарезанный хлеб, перемешайте. Жарьте гренки на самом маленьком огне до хрустящего состояния. Время от времени их необходимо перемешивать. Если чеснок начнет подгорать, уберите его. Именно поэтому его не надо сильно измельчать.
-- Куриное филе нарежьте на небольшие медальоны одинакового размера. Посолите и поперчите их.
-- Поджарьте филе на сковороде с небольшим количеством растительного масла с двух сторон до румяной корочки. Готовое филе снимите со сковороды и остудите.
-- Подготовьте продукты для приготовления соуса.
-- Яйцо положите в стакан и залейте крутым кипятком. Подержите его в таком виде минуту-две. таким образом оно не сварится, но хорошо продезинфицируется.
-- В стакан для взбивания разбейте подготовленное яйцо, положите пармезан, горчицу, сахар, соль, масло и измельченный чеснок.
-- Короткими импульсными движениями взбейте все ингредиенты до состояния соуса. Он получится не сильно густым, но все-таки немного гуще воды.
-- Остывшее филе нарежьте на небольшие кусочки.
-- На дно тарелки порвите листья салата. Полейте салат соусом.
-- Разложите кусочки курицы и порезанные помидорки.
-- Сверху положите сухарики. Посыпьте натертым пармезаном.
-- И в заключении еще раз полейте весь салат соусом. Сразу же подавайте, чтобы гренки не успели размокнуть.</mutableString>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сложность: Средний" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfV-6e-oGE">
-                                <rect key="frame" x="123" y="88" width="168" height="20.5"/>
+                                <rect key="frame" x="123" y="108" width="168" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-Wo-A2b">
+                                <rect key="frame" x="18" y="148.5" width="376" height="713.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">- Подготовьте продукты для приготовления салата: Салат Айсберг - 400 гр, Куриное филе 280 гр, Помидоры Черри - 10 шт, Батон 220 гр, Пармезан 80 гр, Чеснок 1 зубч., Растительное масло 1 ст.л., Соль и перец черныый молотый по вкусу 
+- Батон нарежьте на небольшие кубики
+- На сковороду налейте немного растительного масла, выключите газ и закажите пиццу</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oH4-5F-Nrf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="bottom" secondItem="oH4-5F-Nrf" secondAttribute="bottom" id="8ZN-4Z-3Sb"/>
-                            <constraint firstItem="EfV-6e-oGE" firstAttribute="top" secondItem="oH4-5F-Nrf" secondAttribute="top" id="Dh7-dH-1rc"/>
-                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="top" secondItem="EfV-6e-oGE" secondAttribute="bottom" constant="20" id="QnQ-tK-LTM"/>
-                            <constraint firstItem="EfV-6e-oGE" firstAttribute="centerX" secondItem="u3j-Wo-A2b" secondAttribute="centerX" id="qrJ-05-2ZE"/>
-                            <constraint firstItem="EfV-6e-oGE" firstAttribute="centerX" secondItem="DDS-HQ-kqI" secondAttribute="centerX" id="tf3-LO-Dnf"/>
-                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="19" id="vTc-lt-omv"/>
+                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="18" id="Af1-lt-bz6"/>
+                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="top" secondItem="EfV-6e-oGE" secondAttribute="bottom" constant="20" id="K58-cj-gkQ"/>
+                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="bottom" secondItem="oH4-5F-Nrf" secondAttribute="bottom" id="NbX-da-vaA"/>
+                            <constraint firstItem="EfV-6e-oGE" firstAttribute="top" secondItem="oH4-5F-Nrf" secondAttribute="top" constant="20" id="Nhz-uN-kcm"/>
+                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="trailing" secondItem="DDS-HQ-kqI" secondAttribute="trailingMargin" id="bAZ-td-EpZ"/>
+                            <constraint firstItem="EfV-6e-oGE" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="123" id="flU-e5-hXt"/>
+                            <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EfV-6e-oGE" secondAttribute="trailing" symbolic="YES" id="ucP-R6-enJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Салат Цезарь" id="2VE-AL-tn0"/>
+                    <connections>
+                        <outlet property="recipeDescription" destination="u3j-Wo-A2b" id="0gn-sx-xfc"/>
+                        <outlet property="recipeDifficulty" destination="EfV-6e-oGE" id="m0E-ke-3Kp"/>
+                        <outlet property="recipeTitle" destination="2VE-AL-tn0" id="HZx-N4-jmw"/>
+                        <outlet property="repiceDifficulty" destination="EfV-6e-oGE" id="nCs-D5-Ahb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aT-Sj-6av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701" y="94"/>
+            <point key="canvasLocation" x="1700.0000000000002" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AOl-Dv-IBj">

@@ -13,10 +13,12 @@ class RecipeDetailsViewController: UIViewController {
     @IBOutlet weak var recipeDifficulty: UILabel!
     @IBOutlet weak var recipeDescription: UITextView!
     
+
     var recipe: Recipe?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

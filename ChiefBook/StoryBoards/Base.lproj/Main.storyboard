@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nso-ZR-Ihu">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
+
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,6 +17,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b24-02-aIc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="WNn-N3-2TI" detailTextLabel="amh-Kj-5Zs" style="IBUITableViewCellStyleSubtitle" id="eKT-sr-Erc">
@@ -64,6 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bct-bw-k1K">
                                 <rect key="frame" x="131" y="156" width="152" height="18"/>
                                 <subviews>
@@ -90,6 +94,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Подготовьте продукты для приготовления салата" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-Wo-A2b">
                                 <rect key="frame" x="20" y="204" width="374" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -98,6 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="oH4-5F-Nrf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+
                             <constraint firstItem="bct-bw-k1K" firstAttribute="top" secondItem="4a4-Xc-qnC" secondAttribute="bottom" constant="18" id="2pT-OL-WVd"/>
                             <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" secondItem="u3j-Wo-A2b" secondAttribute="trailing" constant="20" id="78d-cd-WOE"/>
                             <constraint firstItem="u3j-Wo-A2b" firstAttribute="bottom" secondItem="oH4-5F-Nrf" secondAttribute="bottom" constant="30" id="A8s-tL-saw"/>
@@ -116,11 +122,14 @@
                         <outlet property="recipeDescription" destination="u3j-Wo-A2b" id="hpf-Np-vow"/>
                         <outlet property="recipeDifficulty" destination="9lw-fo-HSf" id="PcN-G6-hxj"/>
                         <outlet property="recipeTitle" destination="4a4-Xc-qnC" id="Ae8-15-UK1"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aT-Sj-6av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="1768" y="777"/>
+
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bw4-YK-3KC">

@@ -16,8 +16,17 @@ class MainListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Some somment from Max
+
         
+
         navigationItem.leftBarButtonItem = editButtonItem
+=======
+            // Ivan comment 1
+
+        // Max comment
+
         
     }
 

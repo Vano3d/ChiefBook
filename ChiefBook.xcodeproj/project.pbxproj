@@ -66,7 +66,6 @@
 				E6E8B9622680FA2D00E34EAF /* AppDelegate.swift */,
 				E6E8B9642680FA2D00E34EAF /* SceneDelegate.swift */,
 				E6E8B96B2680FA2F00E34EAF /* Assets.xcassets */,
-				E6E8B96D2680FA2F00E34EAF /* LaunchScreen.storyboard */,
 				E6E8B9702680FA2F00E34EAF /* Info.plist */,
 			);
 			path = ChiefBook;
@@ -84,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E6E8B9682680FA2D00E34EAF /* Main.storyboard */,
+				E6E8B96D2680FA2F00E34EAF /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";

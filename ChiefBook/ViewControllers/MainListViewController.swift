@@ -16,22 +16,9 @@ class MainListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Some somment from Max
-
-        
-
         navigationItem.leftBarButtonItem = editButtonItem
-=======
-            // Ivan comment 1
-
-        // Max comment
-
-        
     }
-
 }
-
 
 extension MainListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,7 +58,6 @@ extension MainListViewController {
 }
 
 
-
 extension MainListViewController {
     // отображает нужную иконку слева если тапнуть edit. Например, ".delete" = иконка удаления
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
@@ -104,7 +90,5 @@ extension MainListViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
-    
     
 }

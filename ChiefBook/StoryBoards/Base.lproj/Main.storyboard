@@ -64,21 +64,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сложность:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHr-sV-vNn">
-                                <rect key="frame" x="20" y="156" width="84" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bct-bw-k1K">
+                                <rect key="frame" x="131" y="156" width="152" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сложность:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHr-sV-vNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="простой" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lw-fo-HSf">
+                                        <rect key="frame" x="91.333333333333343" y="0.0" width="60.666666666666657" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название рецепта" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a4-Xc-qnC">
-                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <rect key="frame" x="102.66666666666669" y="108" width="209" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="простой" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lw-fo-HSf">
-                                <rect key="frame" x="112" y="156" width="61" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -93,20 +98,17 @@
                         <viewLayoutGuide key="safeArea" id="oH4-5F-Nrf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bct-bw-k1K" firstAttribute="top" secondItem="4a4-Xc-qnC" secondAttribute="bottom" constant="18" id="2pT-OL-WVd"/>
                             <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" secondItem="u3j-Wo-A2b" secondAttribute="trailing" constant="20" id="78d-cd-WOE"/>
                             <constraint firstItem="u3j-Wo-A2b" firstAttribute="bottom" secondItem="oH4-5F-Nrf" secondAttribute="bottom" constant="30" id="A8s-tL-saw"/>
                             <constraint firstItem="u3j-Wo-A2b" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="20" id="Ab4-Me-Ux2"/>
-                            <constraint firstItem="4a4-Xc-qnC" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="20" id="Ezt-aJ-ir0"/>
-                            <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9lw-fo-HSf" secondAttribute="trailing" symbolic="YES" id="GG5-qC-wf3"/>
+                            <constraint firstItem="4a4-Xc-qnC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="20" id="Ezt-aJ-ir0"/>
                             <constraint firstItem="u3j-Wo-A2b" firstAttribute="centerX" secondItem="DDS-HQ-kqI" secondAttribute="centerX" id="IPr-8h-Awq"/>
-                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="top" secondItem="QHr-sV-vNn" secondAttribute="bottom" constant="30" id="MEo-2B-F7U"/>
-                            <constraint firstItem="QHr-sV-vNn" firstAttribute="leading" secondItem="oH4-5F-Nrf" secondAttribute="leading" constant="20" id="PNM-0s-Fzo"/>
-                            <constraint firstItem="QHr-sV-vNn" firstAttribute="top" secondItem="4a4-Xc-qnC" secondAttribute="bottom" constant="18" id="PRC-PX-Xli"/>
-                            <constraint firstItem="9lw-fo-HSf" firstAttribute="leading" secondItem="QHr-sV-vNn" secondAttribute="trailing" constant="8" symbolic="YES" id="doH-wa-9Jt"/>
-                            <constraint firstItem="9lw-fo-HSf" firstAttribute="top" secondItem="QHr-sV-vNn" secondAttribute="bottom" constant="-18" id="k6X-hS-QdU"/>
+                            <constraint firstItem="bct-bw-k1K" firstAttribute="centerX" secondItem="DDS-HQ-kqI" secondAttribute="centerX" id="N1c-px-6mb"/>
+                            <constraint firstItem="u3j-Wo-A2b" firstAttribute="top" secondItem="QHr-sV-vNn" secondAttribute="bottom" constant="30" id="a4D-1S-mlR"/>
                             <constraint firstItem="4a4-Xc-qnC" firstAttribute="centerX" secondItem="DDS-HQ-kqI" secondAttribute="centerX" id="n8Y-93-HJb"/>
                             <constraint firstItem="4a4-Xc-qnC" firstAttribute="top" secondItem="oH4-5F-Nrf" secondAttribute="top" constant="20" id="nfz-0X-iT8"/>
-                            <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" secondItem="4a4-Xc-qnC" secondAttribute="trailing" constant="20" id="u4A-bs-D2O"/>
+                            <constraint firstItem="oH4-5F-Nrf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4a4-Xc-qnC" secondAttribute="trailing" constant="20" id="u4A-bs-D2O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2VE-AL-tn0"/>
